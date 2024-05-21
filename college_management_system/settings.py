@@ -83,7 +83,7 @@ TEMPLATES = [
 
 #WSGI_APPLICATION = 'college_management_system.wsgi.application'
 #WSGI_APPLICATION = 'app.wsgi.application'
-WSGI_APPLICATION = 'college_management_system.wsgi:application'
+WSGI_APPLICATION = 'main_app.wsgi.application'
 
 
 # Database
