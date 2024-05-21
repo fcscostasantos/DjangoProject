@@ -1,0 +1,84 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<html>
+<head>
+    <style>
+        /* Estilos para o plano de fundo da página */
+        body {
+            background-image: url("{% static 'dist/img/imagem2.png' %}");
+            background-repeat: no-repeat;
+            background-size: cover; /* Centraliza e dimensiona a imagem para preencher a tela */
+            /* Outros estilos para o plano de fundo... */
+        }
+
+        /* Estilos para a barra de navegação */
+        .navbar {
+            background-color: #343a40; /* Cor de fundo da barra */
+            padding: 18px; /* Espaçamento interno */
+        }
+
+        .navbar-brand {
+            color: #ffffff; /* Cor do texto do botão "Página Inicial" */
+            font-weight: bold; /* Negrito */
+        }
+
+        .navbar-brand:hover {
+            color: #ffffff; /* Cor do texto ao passar o mouse */
+        }
+
+        /* Estilos para a janela transparente */
+        .janela {
+            
+            background-color: transparent; /* Janela transparente */
+            border: none; /* Sem bordas */
+            width: 55%; /* Largura da janela */
+            margin: 70px auto; /* Centralizar na página */
+            padding: 40px; /* Espaçamento interno */
+            color: #030303; /* Cor do texto dentro da janela */
+        }
+    </style>
+</head>
+<body>
+    <!-- Barra de navegação -->
+    <nav class="navbar">
+        <a class="navbar-brand" href="/">Página Inicial</a>
+    </nav>
+
+    <!-- Conteúdo da página -->
+    
+    <div class="janela" contenteditable="true">
+        <h4 class="text-center my-3">
+            <a href="" style="color: BLACK;"><b>ESCOLA 22 DE ABRIL</b></a>
+          </h4>
+    <p><strong>A escola 22 de Abril é uma instituição de ensino privada, fundada em 1991, recebeu o nome de “22 de Abril” em homenagem ao dia da “Terra", ao descobrimento do Brasil e a fundação de Itanhaém, visa, primordialmente, a produção de conhecimento, no espaço das relações ensino / aprendizado, tendo um trabalho de conscientização da ética, da importância dos valores morais e cidadania.
+    </strong></p>
+      
+    <p><strong>Assegurar ao aluno um ensino de qualidade, em um ambiente harmonioso e afetivo, levando-se em conta os saberes pré existentes dos mesmos e aprofundando-os em conteúdos selecionados, que se relacionem ao interesse do educando e seu contexto social, possibilitando uma prática pedagógica significativa.
+    </strong></p>
+
+    <p><strong>Inovar as ações pedagógicas cotidianamente, adequando-as ao planejamento escolar, que em seu currículo, reflete os conhecimentos considerados 
+    necessários pela sociedade e pelo coletivo da escola, transformando assim, as aulas, em atividades prazerosas e dinâmicas, possibilitando ao aluno 
+    aprender os procedimentos necessários para adquirir, organizar, relacionar, interpretar e produzir informações, tornando-o um sujeito histórico ativo, 
+    consciente, agente de sua própria formação.</strong></p>
+
+    <p><strong>Favorecer a ação do professor na interação com o educando, posicionando-o como um verdadeiro estimulador de aprendizagem, organizador de 
+    projetos que encontrem soluções sempre pessoais aos desafios encontrados, pesquisador, aprendiz, sabendo que: cérebros diferentes aprendem de 
+    maneiras  diferentes, portanto usa diferentes linguagens e soluções, respeitando estilos de aprendizagem diferentes.</strong></p>
+    
+    <p><strong>A partir desses pressupostos, fundamentamos a nossa proposta numa filosofia sócio interacionista, onde o aluno é estimulado a construir
+    seu próprio conhecimento, tendo em seu professor um mediador de saberes e encontrando meios ou processos que o levem aos resultados esperados, 
+    onde o erro desempenha importante papel construtivo na aprendizagem, além de revelar o modo como os alunos compreendem e ajudando-o a construir
+    novas hipóteses, buscar dados e  reformular suas ideias num ambiente de acolhimento, onde prevaleçam a confiança, dedicação, interesse, respeito
+    e limites. Desenvolvendo as inteligências múltiplas e a competências socioemocionais levando os alunos a gerenciar suas emoções, elevar sua autoestima 
+    e perceber que é capaz e possui habilidades próprias.</strong></p>
+    
+    <p><strong>A relação de confiança mútua e a identificação da comunidade de pais com os valores básicos da Escola são fatores fundamentais para a plena realização da 
+    proposta educacional.</strong></p>
+            
+        <!-- Mais conteúdo aqui... -->
+    </div>
+</body>
+</html>
+{% endblock content %}
