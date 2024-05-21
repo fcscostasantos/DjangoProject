@@ -68,7 +68,7 @@ ROOT_URLCONF = 'college_management_system.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['main_app/templates'], #My App Templates
+        'DIRS': ['main_app/templates'], 
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -89,12 +89,12 @@ TEMPLATES = [
 
 DATABASES = {
     'default': {
-        'ENGINE': os.getenv('DB_ENGINE', "django.db.backends.postgresql_psycopg2"),
-        'NAME': os.getenv('POSTGRES_DB', 'gestao_escolar'),
-        'USER': os.getenv('POSTGRES_USER', 'postgres'),
-        'PASSWORD': os.getenv('POSTGRES_PASSWORD', 'GestEscolar@2024!'),
-        'HOST': os.getenv('POSTGRES_HOST', 'localhost'),
-        'PORT': os.getenv('POSTGRES_PORT', '5432'),
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'gestao_escolar',
+        'USER': 'postgres',
+        'PASSWORD': 'S@s27fcs!',
+        'HOST': 'localhost',
+        'PORT': '5432',
     }
 }
 
@@ -141,11 +141,11 @@ STATIC_URL = '/static/'
 
 MEDIA_URL = '/media/'
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 AUTH_USER_MODEL = 'main_app.CustomUser'
 AUTHENTICATION_BACKENDS = ['main_app.EmailBackend.EmailBackend']
-TIME_ZONE = 'Africa/Lagos'
+TIME_ZONE = 'America/Sao_Paulo'
 
 # EMAIL_BACKEND = 'django.core.mail.backends.filebased.EmailBackend'
 # EMAIL_FILE_PATH = os.path.join(BASE_DIR, "sent_mails")
